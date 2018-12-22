@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.chat.MainActivity"
+    android:id="@+id/test">
+    <Button
+        android:id="@+id/message_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:text="SEND"/>
+
+
+    <EditText
+        android:id="@+id/message_input"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/message_send_button"
+        android:layout_toStartOf="@+id/message_send_button"
+        android:hint="Input" />
+
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/message_send_button"
+        android:dividerHeight="16dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
